@@ -48,7 +48,7 @@
 //   console.log("Ive already shared all the work ");
 // };
 
-// let p1 = new Person("eren");
+// let p1 = new Person("EREN");
 // p1.Introduce();
 
 // let t1 = new Teacher("CAN", "Math");
@@ -64,7 +64,7 @@
 // h1.teach();
 // h1.shareTask();
 
-/// PRİMİTİVE  & OBJECT FARKLARI
+/// PRIMITIVE  & OBJECT FARKLARI
 
 // let a = 10;
 // let b = a;
@@ -174,7 +174,7 @@
 //   console.log(msg);
 // })("Eren");
 
-/// FUNCSTİONS THAT RETURN FUNCTİONS
+/// FUNCSTIONS THAT RETURN FUNCTIONS
 
 // function Question(hobby) {
 //   switch (hobby) {
