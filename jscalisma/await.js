@@ -1,0 +1,39 @@
+let isError = true;
+
+function getCategory() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (!isError) {
+        resolve("TELEFON");
+      } else {
+        reject("Error");
+      }
+
+      resolve("TELEFON");
+    }, 1000);
+  });
+}
+
+function getProducts(category) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(`5 products in ${category}`);
+    }, 1000);
+  });
+}
+
+getCategory()
+  .then(getProducts)
+  .then((res) => console.log(res))
+  .catch((err) => console.log(err));
+
+async function getProduct() {
+  try {
+    let category = await getCategory();
+    let result = await getProducts(category);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+getProduct();
